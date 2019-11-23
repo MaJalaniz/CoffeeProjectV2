@@ -30,7 +30,7 @@ function searching(){
     for(let i = 0; i < coffees.length; i++){
     if(bar.includes(coffees[i].name)){
         console.log("This coffee is " + coffees[i].name + ", " + coffees[i].roast);
-        alert("This is " + coffees[i].name + " Coffee!");
+        alert("This is " + coffees[i].name + " a " + coffees[i].roast + " roast coffee!");
     }else{
         console.log("What is this coffee?");
     }
