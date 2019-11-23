@@ -31,8 +31,9 @@ function searching(){
     if(bar.includes(coffees[i].name)){
         console.log("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
         alert("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
-        let one = coffees[i].name;
-        let showMe = document.querySelector()
+        let one = coffees[i].name +", "+ coffees[i].roast;
+        let showMe = document.querySelector('.square');
+        showMe.textContent = one;
     }else{
         console.log("What is this coffee?");
     }
