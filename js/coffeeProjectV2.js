@@ -20,7 +20,7 @@ let coffees = [
 
 //----------------------------------------------------------------------------------------------
 
-//This only works with single name coffees
+//This works with New Orleans, but not Light or Half because of the name City.
 
 function searching(){
     let bar = document.getElementById('searchBar').value;
@@ -29,8 +29,10 @@ function searching(){
     
     for(let i = 0; i < coffees.length; i++){
     if(bar.includes(coffees[i].name)){
-        console.log("This coffee is " + coffees[i].name + ", " + coffees[i].roast);
-        alert("This is " + coffees[i].name + " a " + coffees[i].roast + " roast coffee!");
+        console.log("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
+        alert("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
+        let one = coffees[i].name;
+        let showMe = document.querySelector()
     }else{
         console.log("What is this coffee?");
     }
