@@ -8,7 +8,9 @@
     </head>
     <body>
         <div>
-            <input type="text" class="searchTerm" placeholder="What are you looking for?">
+
+            <!-- here below, <input> makes use of the onkeyup to run the function searching() -->
+            <input type="text" id = "searchBar" onkeyup = "searching()" placeholder="What are you looking for?">
                 <button type="submit" class="searchButton">Search</button>
         </div>
         <div class="box">
