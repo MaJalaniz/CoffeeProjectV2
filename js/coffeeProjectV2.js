@@ -27,7 +27,7 @@ function searching(){
     
     for(let i = 0; i < coffees.length; i++){
     if(bar.includes(coffees[i].name)){
-        //console.log("YES");
+        console.log("This coffee is " + coffees[i].name + ", " + coffees[i].roast);
         alert("This is " + coffees[i].name + " Coffee!");
     }else{
         console.log("What is this coffee?");
@@ -35,5 +35,8 @@ function searching(){
     //console.log(bar);
     }
 }
+
+//Bold the name
+//Include the roast in smaller font
 
 //----------------------------------------------------------------------------------------------
