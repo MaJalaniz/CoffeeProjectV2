@@ -1,6 +1,6 @@
 
 //----------------------------------------------------------------------------------------------
-
+        //Coffee names
 let coffees = [
     {id: 1, name: 'Light City', roast: 'light'},
     {id: 2, name: 'Half City', roast: 'light'},
@@ -20,14 +20,6 @@ let coffees = [
 
 //----------------------------------------------------------------------------------------------
 
-    function coffeeNames(){
-    for(let i = 0; i < coffees.length; i++){
-        console.log(coffees[i].name);
-    }
-}
-//console.log(coffeeNames());
-//----------------------------------------------------------------------------------------------
-
 function searching(){
     let bar = document.getElementById('searchBar').value;
     let grab = document.querySelector('.box');
@@ -38,8 +30,10 @@ function searching(){
         //console.log("YES");
         alert("This is " + coffees[i].name + " Coffee!");
     }else{
-        console.log("NO");
+        console.log("What is this coffee?");
     }
     //console.log(bar);
     }
 }
+
+//----------------------------------------------------------------------------------------------
