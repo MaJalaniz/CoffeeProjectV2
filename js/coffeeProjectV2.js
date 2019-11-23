@@ -20,6 +20,8 @@ let coffees = [
 
 //----------------------------------------------------------------------------------------------
 
+//This only works with single name coffees
+
 function searching(){
     let bar = document.getElementById('searchBar').value;
     let grab = document.querySelector('.box');
