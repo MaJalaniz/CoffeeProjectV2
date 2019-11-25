@@ -25,23 +25,34 @@ let coffees = [
 function searching(){
     let bar = document.getElementById('searchBar').value;
     let grab = document.querySelector('.box');
-    grab.textContent = bar;
+    //grab.textContent = bar; //prints search to browser
     
     for(let i = 0; i < coffees.length; i++){
     if(bar.includes(coffees[i].name)){
         console.log("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
-        alert("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
+        //alert("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
         let one = coffees[i].name + " " + coffees[i].roast; 
         let blend = document.querySelector('.square');
         blend.textContent = one;
     }else{
         console.log("What is this coffee?");
     }
+    
     //console.log(bar);
     }
 }
+//this function logs the coffee and the individual letter
+function little(){
+    for(let j = 0; j < coffees.length; j++){
+        for(let k = 0; k < coffees.length; k++){
+        console.log(coffees[j].name[k]);
+        }
+    }
+}
+console.log(little());
 
 //Bold the name
 //Include the roast in smaller font
 
 //----------------------------------------------------------------------------------------------
+
