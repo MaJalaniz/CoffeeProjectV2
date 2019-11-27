@@ -76,7 +76,7 @@ let coffees = [
 
 //Displays the coffees to the browser
 for (var i=0; i < coffees.length ;i++)
-    document.getElementById("myDiv").innerHTML += "Name: " + coffees[i].name + " Roast: "+ coffees[i].roast + "<br>";
+    document.getElementById("myDiv").innerHTML +=  "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "<br>";
 
 
 //----------------------------------------------------------------------------------------------
