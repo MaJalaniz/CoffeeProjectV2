@@ -1,5 +1,7 @@
-div.square{
+p.square{
     font-weight: bold;
+    border: solid; 
+    width:50%;
 }
 
 h1{
