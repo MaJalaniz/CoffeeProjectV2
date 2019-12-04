@@ -11,3 +11,10 @@ h1{
 div.move{
     float:right;
 }
+strong {
+    font-size: 2rem;
+}
+i {
+    font-size: 1.25rem;
+    color:grey;
+}
