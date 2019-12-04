@@ -21,3 +21,7 @@ i {
 p {
     width:250px;
 }
+div {
+    width: 250px;
+    float: left;
+}
