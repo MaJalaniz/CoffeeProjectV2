@@ -11,7 +11,8 @@ h1{
 div.move{
     float:right;
     position: relative;
-    left: -17%;
+    left: 0%;
+    top:100px;
 }
 strong {
     font-size: 2rem;
@@ -29,7 +30,26 @@ div {
 }
 div#myDiv.container {
     max-width: 570px;
+    position: relative;
+    left: 10%;
 }
 h6{
     font-weight: bold;
+}
+
+input#searchBar{
+    border-radius: 5px 5px 5px 5px;
+    width:300px;
+}
+button.searchButton.btn.btn-primary{
+    width:300px;
+}
+div.choices{
+    position:relative;
+    float:right;
+    top:43px;
+    right:19.5%;
+}
+select{
+    width: 300px;
 }

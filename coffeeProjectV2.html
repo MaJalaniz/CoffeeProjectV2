@@ -9,12 +9,24 @@
     <body>
         <h1>Coffee Shop Menu</h1>
         <hr>
+        <div class="choices">
+            <h6>Roast</h6>
+                <select>
+                        <option value="0">Choose a roast</option>
+                        <option value="1">All</option>
+                        <option value="2">light</option>
+                        <option value="3">medium</option>
+                        <option value="4">dark</option>
+                      </select>
+        </div>
         <div class="move">
             <!-- here below, <input> makes use of the onkeyup to run the function searching() -->
             <h6>Coffee Name</h6>
             <input type="text" id = "searchBar" onkeyup = "searching()" placeholder="Coffee name here">
-                <button type="submit" class="searchButton">Search</button>
+                <br>
+                <button type="submit" class="searchButton btn btn-primary">Submit</button>
         </div>
+        
         <!--
         <div>
             <p class="square"></p>
