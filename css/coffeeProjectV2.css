@@ -10,6 +10,8 @@ h1{
 
 div.move{
     float:right;
+    position: relative;
+    left: -17%;
 }
 strong {
     font-size: 2rem;
@@ -24,4 +26,10 @@ p {
 div {
     width: 250px;
     float: left;
+}
+div#myDiv.container {
+    max-width: 570px;
+}
+h6{
+    font-weight: bold;
 }
