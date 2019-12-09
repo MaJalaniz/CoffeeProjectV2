@@ -131,11 +131,13 @@ function search_drink() {
 
     function dark(){
         for(let q = 0; q < coffees.length; q++){
-            console.log(coffees[q]);
+           // console.log(coffees[q]);
             if(coffees[q].roast.includes('dark') == true){
                 console.log("yes");
+                let bev = coffees[q].roast;
+                console.log(bev + " " + coffees[q].name);
             }else if(coffees[q].roast.includes('dark') !== true){
-                console.log("this is not DARK");
+                //console.log("this is not DARK");
             }
         }
     }
