@@ -75,8 +75,10 @@ let coffees = [
 ];
 
 //Displays the coffees to the browser
+
 for (var i=0; i < coffees.length ;i++)
-    document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
+     document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
+
 
 
 //----------------------------------------------------------------------------------------------
@@ -128,18 +130,19 @@ function search_drink() {
     
 //----------------------------------------------------------------------------------------------
     //write a function that shows all the dark coffees
+    //this function does not get rid of the previous coffees
+    // instead, adds dark at the bottom of the previouse list of coffees
 
     function dark(){
         for(let q = 0; q < coffees.length; q++){
            // console.log(coffees[q]);
             if(coffees[q].roast.includes('dark') == true){
                 console.log("yes");
-                let bev = coffees[q].roast;
-                console.log(bev + " " + coffees[q].name);
+                //console.log(bev + " " + coffees[q].name);
                 let garb = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[q].name + "</strong>" + " " + "<i>" + coffees[q].roast + "</i>" + "</div>" + "<br>";
                
             }else {
-                console.log("Watashi wa baka!")
+                console.log("Watashi wa baka!");
             }
         }
     }
