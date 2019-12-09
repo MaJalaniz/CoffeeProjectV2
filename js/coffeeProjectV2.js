@@ -128,7 +128,7 @@ console.log(little());
 function search_drink() { 
     let input = document.getElementById('searchBar').value 
     input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('animals'); 
+    let x = document.getElementsByClassName('example'); 
       
     for (i = 0; i < x.length; i++) {  
         if (!x[i].innerHTML.toLowerCase().includes(input)) { 
