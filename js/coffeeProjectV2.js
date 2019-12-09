@@ -76,7 +76,7 @@ let coffees = [
 
 //Displays the coffees to the browser
 for (var i=0; i < coffees.length ;i++)
-    document.getElementById("myDiv").innerHTML +=  "<div>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
+    document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
 
 
 //----------------------------------------------------------------------------------------------
@@ -122,7 +122,20 @@ function little(){
 }
 console.log(little());
 */
-//Bold the name
-//Include the roast in smaller font
 
 //----------------------------------------------------------------------------------------------
+
+function search_drink() { 
+    let input = document.getElementById('searchBar').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('animals'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="list-item";                  
+        } 
+    } 
+} 
