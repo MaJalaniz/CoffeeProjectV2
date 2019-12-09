@@ -137,15 +137,10 @@ function search_drink() {
                 let bev = coffees[q].roast;
                 console.log(bev + " " + coffees[q].name);
                 let garb = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[q].name + "</strong>" + " " + "<i>" + coffees[q].roast + "</i>" + "</div>" + "<br>";
-                //document.getElementById("myDiv").style.display = "none";
                
-            }else if(coffees[q].roast.includes('light') == true){
-              console.log("These are not DARK");
-              console.log(coffees[q].roast + " " + "aaaaaaaaaaaaaaaaaaaaaaa");
-            }else if (coffees[q].roast.includes('medium') == true){
-                console.log("These are not DARK");
-                console.log(coffees[q].roast + " " + "bbbbbbbbbbbbbbbbbbbbb");
-            } 
+            }else {
+                console.log("Watashi wa baka!")
+            }
         }
     }
     console.log(dark());
