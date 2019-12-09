@@ -104,27 +104,7 @@ function searching(){
 }
 
 //----------------------------------------------------------------------------------------------
-
-
-//----------------------------------------------------------------------------------------------
-//this function logs the coffee and the individual letter
-/*
-function little(){
-    for(let j = 0; j < coffees.length; j++){
-        for(let k = 0; k < coffees.length; k++){
-        //console.log(coffees[j].name[k]);
-        let roasts = coffees[j].name[k];
-        console.log(roasts);
-        //let letters = document.getElementById('box');
-       // letters.textContent = roasts;
-        }
-    }
-}
-console.log(little());
-*/
-
-//----------------------------------------------------------------------------------------------
-
+    //Dynamic search function 2.0, now works with all the coffees now not just light or half.
 function search_drink() { 
     let input = document.getElementById('searchBar').value 
     input=input.toLowerCase(); 
@@ -139,3 +119,8 @@ function search_drink() {
         } 
     } 
 } 
+
+//----------------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------------
