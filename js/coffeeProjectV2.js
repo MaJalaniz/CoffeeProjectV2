@@ -81,7 +81,7 @@ for (var i=0; i < coffees.length ;i++)
 
 //----------------------------------------------------------------------------------------------
 
-//This works with New Orleans, but not Light or Half because of the name City.
+// Dynamic search function v1.0, This works with New Orleans, but not Light or Half because of the name City.
 
 function searching(){
     let bar = document.getElementById('searchBar').value;
@@ -121,6 +121,25 @@ function search_drink() {
 } 
 
 //----------------------------------------------------------------------------------------------
+    //write a function that adds an item to the list of coffee objects
 
 
+
+    
 //----------------------------------------------------------------------------------------------
+    //write a function that shows all the dark coffees
+
+    function dark(){
+        for(let q = 0; q < coffees.length; q++){
+            console.log(coffees[q]);
+            if(coffees[q].roast.includes('dark') == true){
+                console.log("yes");
+            }else if(coffees[q].roast.includes('dark') !== true){
+                console.log("this is not DARK");
+            }
+        }
+    }
+    console.log(dark());
+
+
+//---------------------------------------------------------------------------------------------- 
