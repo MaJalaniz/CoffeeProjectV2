@@ -132,10 +132,13 @@ function search_drink() {
     //write a function that shows all the dark coffees
     //this function does not get rid of the previous coffees
     // instead, adds dark at the bottom of the previouse list of coffees
-
+    let show = document.querySelector('.bev').value;
     function dark(){
+
         for(let q = 0; q < coffees.length; q++){
            // console.log(coffees[q]);
+           //console.log(show);
+           
             if(coffees[q].roast.includes('dark') == true){
                 console.log("yes");
                 //console.log(bev + " " + coffees[q].name);
@@ -144,9 +147,30 @@ function search_drink() {
             }else {
                 console.log("Watashi wa baka!");
             }
-        }
+        } 
     }
+        
+    
     console.log(dark());
 
 
 //---------------------------------------------------------------------------------------------- 
+
+//let show = document.querySelector('.dark').value;
+function give() { 
+    var x = document.getElementById("choices").value; 
+    document.getElementById("choiceHere").innerHTML =  
+    "Selected roast type: " + x; 
+    if(x === "light"){
+        for(let a = 0; a < coffees.length; a++){
+            if(coffees[a].roast.includes('light') == true){
+            document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+            }
+        }
+
+        }else{
+            console.log("NO");
+        }
+    }
+
+    console.log(x);
