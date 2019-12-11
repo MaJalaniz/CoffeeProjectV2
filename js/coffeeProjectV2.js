@@ -124,8 +124,15 @@ function search_drink() {
 //----------------------------------------------------------------------------------------------
     //write a function that adds an item to the list of coffee objects
 
-
-
+    function newOption(){
+        for (var i=0; i < coffees.length ;i++){
+            let those = coffees[i].id;
+    console.log(those);
+}
+        //coffees.push({id:one, name:two, roast:three});
+        console.log();
+    }
+console.log(newOption());
     
 //----------------------------------------------------------------------------------------------
         //write a function that shows all the light coffees
