@@ -129,9 +129,9 @@ function search_drink() {
 
     
 //----------------------------------------------------------------------------------------------
-    //write a function that shows all the light coffees
+        //write a function that shows all the light coffees
     //this function does not get rid of the previous coffees
-    // instead, adds light coffees at the bottom of the previouse list of coffees
+    // instead, adds each category of roasts/coffees at the bottom of the previouse list of coffees
     function give() { 
         var x = document.getElementById("choices").value; 
         document.getElementById("choiceHere").innerHTML =  
@@ -142,7 +142,6 @@ function search_drink() {
                 document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
                 }
             }
-    
             }else if (x === "medium"){
                 for(let a = 0; a < coffees.length; a++){
                     if(coffees[a].roast.includes('medium') == true){
@@ -151,14 +150,18 @@ function search_drink() {
                 }
             }else if(x === "dark"){
                 for(let a = 0; a < coffees.length; a++){
-                    if(coffees[a].roast.includes('medium') == true){
+                    if(coffees[a].roast.includes('dark') == true){
                     document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
                     }
                 }
-            }else{
-                console.log("NO");
+            }else if (x === "all"){
+                for(let a = 0; a < coffees.length; a++){
+                    document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                    }
+                }else{
+                    console.log("NO");
+                }
             }
-        }
     
         console.log(x);
     
