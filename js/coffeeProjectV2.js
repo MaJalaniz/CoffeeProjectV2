@@ -129,48 +129,37 @@ function search_drink() {
 
     
 //----------------------------------------------------------------------------------------------
-    //write a function that shows all the dark coffees
+    //write a function that shows all the light coffees
     //this function does not get rid of the previous coffees
-    // instead, adds dark at the bottom of the previouse list of coffees
-    let show = document.querySelector('.bev').value;
-    function dark(){
-
-        for(let q = 0; q < coffees.length; q++){
-           // console.log(coffees[q]);
-           //console.log(show);
-           
-            if(coffees[q].roast.includes('dark') == true){
-                console.log("yes");
-                //console.log(bev + " " + coffees[q].name);
-                let garb = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[q].name + "</strong>" + " " + "<i>" + coffees[q].roast + "</i>" + "</div>" + "<br>";
-               
-            }else {
-                console.log("Watashi wa baka!");
+    // instead, adds light coffees at the bottom of the previouse list of coffees
+    function give() { 
+        var x = document.getElementById("choices").value; 
+        document.getElementById("choiceHere").innerHTML =  
+        "Selected roast type: " + x; 
+        if(x === "light"){
+            for(let a = 0; a < coffees.length; a++){
+                if(coffees[a].roast.includes('light') == true){
+                document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                }
             }
-        } 
-    }
-        
     
-    console.log(dark());
-
-
-//---------------------------------------------------------------------------------------------- 
-
-//let show = document.querySelector('.dark').value;
-function give() { 
-    var x = document.getElementById("choices").value; 
-    document.getElementById("choiceHere").innerHTML =  
-    "Selected roast type: " + x; 
-    if(x === "light"){
-        for(let a = 0; a < coffees.length; a++){
-            if(coffees[a].roast.includes('light') == true){
-            document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+            }else if (x === "medium"){
+                for(let a = 0; a < coffees.length; a++){
+                    if(coffees[a].roast.includes('medium') == true){
+                    document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                    }
+                }
+            }else if(x === "dark"){
+                for(let a = 0; a < coffees.length; a++){
+                    if(coffees[a].roast.includes('medium') == true){
+                    document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                    }
+                }
+            }else{
+                console.log("NO");
             }
         }
-
-        }else{
-            console.log("NO");
-        }
-    }
-
-    console.log(x);
+    
+        console.log(x);
+    
+//---------------------------------------------------------------------------------------------- 
