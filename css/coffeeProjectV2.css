@@ -53,3 +53,7 @@ div.choices{
 select{
     width: 300px;
 }
+
+div.example:hover{
+    color:lightblue;
+}

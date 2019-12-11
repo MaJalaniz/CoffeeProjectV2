@@ -80,10 +80,9 @@ for (var i=0; i < coffees.length ;i++)
      document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
 }
 
-
 //----------------------------------------------------------------------------------------------
 
-// Dynamic search function v1.0, This works with New Orleans, but not Light or Half because of the name City.
+    // Dynamic search function v1.0, This works with New Orleans, but not Light or Half because of the name City.
 
 function searching(){
     let bar = document.getElementById('searchBar').value;
@@ -101,11 +100,11 @@ function searching(){
         console.log("What is this coffee?");
     }
     
-    //console.log(bar);
     }
 }
 
 //----------------------------------------------------------------------------------------------
+
     //Dynamic search function 2.0, now works with all the coffees now not just light or half.
 function search_drink() { 
     let input = document.getElementById('searchBar').value 
