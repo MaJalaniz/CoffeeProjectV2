@@ -127,7 +127,21 @@ function search_drink() {
     function newOption(){
         for (var i=0; i < coffees.length ;i++){
             let those = coffees[i].id;
+            let newer = 1;
+            //let one = this id is one that is not equal to any of the IDs found in Coffee object
+           // let two = document.getElementById('searchBar') to get the value and name in the search bar
+           // let three = create another drop down selection for roasts and link the value to this variable
+            if(those === newer){
+                //console.log("EQUALS")
+                let old = coffees[i].id;
+                console.log("YES");
+            }else{
+                console.log("NO");
+                coffees.push({id:one, name:two, roast:three});
+
+            }
     console.log(those);
+    
 }
         //coffees.push({id:one, name:two, roast:three});
         console.log();
