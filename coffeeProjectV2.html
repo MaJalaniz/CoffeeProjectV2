@@ -2,16 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Weather Api</title>
+        <title>ARC Blend</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/coffeeProjectV2.css">
     </head>
-    <body>
+    <body onload="entire()"><!-- Runs the entire() to display all the coffees-->
         <h1>Coffee Shop Menu</h1>
         <hr>
         <div class="choices">
             <h6>Roast</h6>
-                <select id="choices" onchange="give()">
+                <select id="choices" onchange="give()"><!--give() displays coffee/roast based on choice-->
                         <option class="nope"value="0">Choose a roast</option>
                         <option class="all" value="all">All</option>
                         <option class="lig" value="light" >light</option>
@@ -22,29 +22,22 @@
         <p id="choiceHere">
 
         </p>
+
         <div class="move">
-            <!-- here below, <input> makes use of the onkeyup to run the function searching() -->
+            <!-- here below, <input> makes use of the onkeyup to run the function search_drink() -->
             <h6>Coffee Name</h6>
             <input type="text" id = "searchBar" onkeyup = "search_drink()" placeholder="Coffee name here">
                 <br>
                 <button type="submit" class="searchButton btn btn-primary">Submit</button>
         </div>
         
-        <!--
-        <div>
-            <p class="square"></p>
-        </div>
     
-        <div class="box" >
-                
-            </div>
-        -->
         <div class = "container" id="myDiv">
-           
+           <!--This area holds all the coffees for the menu-->
                 
         </div>   
         <div class = "practice">
-
+            <!--An empty area dedicated to any other idea that comes to mind-->
         </div>
        
 

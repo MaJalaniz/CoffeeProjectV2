@@ -75,10 +75,10 @@ let coffees = [
 ];
 
 //Displays the coffees to the browser
-
+function entire(){
 for (var i=0; i < coffees.length ;i++)
      document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
-
+}
 
 
 //----------------------------------------------------------------------------------------------
@@ -132,6 +132,8 @@ function search_drink() {
         //write a function that shows all the light coffees
     //this function does not get rid of the previous coffees
     // instead, adds each category of roasts/coffees at the bottom of the previouse list of coffees
+    //All of the options now display their respective choice except for "choose your coffee" which is void
+
     function give() { 
         var x = document.getElementById("choices").value; 
         document.getElementById("choiceHere").innerHTML =  
