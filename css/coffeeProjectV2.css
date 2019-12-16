@@ -32,6 +32,7 @@ div#myDiv.container {
     max-width: 570px;
     position: relative;
     left: 10%;
+    bottom: 73px;
 }
 h6{
     font-weight: bold;
@@ -56,4 +57,15 @@ select{
 
 div.example:hover{
     color:lightblue;
+}
+
+div.moveThere{
+    position:relative;
+    left: 41.5%;
+    top: 311px;
+}
+div.choicest{
+    position: relative;
+    left: 61%;
+    top: 250px;
 }
