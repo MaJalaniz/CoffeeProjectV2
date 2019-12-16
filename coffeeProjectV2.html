@@ -35,6 +35,7 @@
 
 
         <div class="choicest">
+            <h3>Add a Coffee</h3>
             <h6>Roast</h6>
                 <select id="choiceThere" onchange="give()"><!--give() displays coffee/roast based on choice-->
                         <option class="nope"value="0">Choose a roast</option>
@@ -47,16 +48,16 @@
         <p id="choiceWhere">
 
         </p>
-
+        
         <div class="moveThere">
             <!-- here below, <input> makes use of the onkeyup to run the function search_drink() -->
             <h6>Coffee Name</h6>
-            <input type="text" id = "searchBart" onkeyup = "search_drink()" placeholder="Coffee name here">
+            <input type="text" id = "searchBart" onkeyup = "search_drink()" placeholder="Your coffee name here">
                 <br>
                 <button type="submit" class="searchButton btn btn-primary">Submit</button>
         </div>
         
-    
+    <hr class="moveMe">
     
         <div class = "container" id="myDiv">
            <!--This area holds all the coffees for the menu-->
