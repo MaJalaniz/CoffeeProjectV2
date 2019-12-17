@@ -78,6 +78,10 @@ let coffees = [
 function entire(){
 for (var i=0; i < coffees.length ;i++)
      document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
+     if(give() === 'light'){
+         document.getElementsByClassName('.example').style.display='none';
+     }
+     //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
 }
 
 //----------------------------------------------------------------------------------------------
@@ -153,6 +157,11 @@ console.log(newOption());
     //this function does not get rid of the previous coffees
     // instead, adds each category of roasts/coffees at the bottom of the previouse list of coffees
     //All of the options now display their respective choice except for "choose your coffee" which is void
+    for(let b = 0; b < coffees.length; b++){        
+        document.getElementById('myDiv').style.display = 'none';
+}
+
+
 
     function give() { 
         var x = document.getElementById("choices").value; 
@@ -160,8 +169,11 @@ console.log(newOption());
         "Selected roast type: " + x; 
         if(x === "light"){
             for(let a = 0; a < coffees.length; a++){
+
                 if(coffees[a].roast.includes('light') == true){
-                document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                document.getElementById("myDiv").innerHTML +=  "<div class= ONE>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                }else{
+                    console.log("NOOOOOOOOOOOOO");
                 }
             }
             }else if (x === "medium"){
