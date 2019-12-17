@@ -44,6 +44,7 @@ input#searchBar{
 }
 button.searchButton.btn.btn-primary{
     width:300px;
+    background-color:#08c5d1;
 }
 div.choices{
     position:relative;
@@ -56,7 +57,7 @@ select{
 }
 
 div.example:hover{
-    color:lightblue;
+    color:#08c5d1;
 }
 
 div.moveThere{
