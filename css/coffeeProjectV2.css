@@ -85,3 +85,17 @@ h3{
     position: relative;
     left: 23px;
 }
+
+nav.navbar.navbar-expand-lg{
+    background-color:#430c05
+    ;
+}
+a.navbar-brand{
+    color:#08c5d1
+    ;
+}
+a.nav-link{
+    color:#08c5d1
+    ;
+
+}
