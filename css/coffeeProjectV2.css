@@ -117,11 +117,24 @@ a.nav-link{
     div.choicest{
         position: relative;
         left: 20%;
-        top: 105px;
+        top: 140px;
     }
     div.moveThere{
         position:relative;
         left: -30%;
-        top: 224px;
+        top: 245px;
+    }
+    div#myDiv.container {
+        max-width: 450px;
+        position: relative;
+        left: 10%;
+        top: 270px;
+    }
+    hr.moveMe{
+        position:relative;
+        top: 205px;
+        left: -18%;
+        width: 325px;
+        margin-right:0px;
     }
 }
