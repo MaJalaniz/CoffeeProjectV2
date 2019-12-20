@@ -137,4 +137,15 @@ a.nav-link{
         width: 325px;
         margin-right:0px;
     }
+    strong {
+        font-size: 1.5rem;
+    }
+    i {
+        font-size: 1.25rem;
+        color:grey;
+    }
+    div.example{
+       /*float: right;*/
+        width:199px;
+    }
 }
