@@ -102,5 +102,26 @@ a.nav-link{
 
 /*500px by 435px */
 @media screen and (max-width: 500px){
-    
+    div.move {
+        float: right;
+        position: relative;
+        left: 20%;
+        top: 64px;
+    }
+    div.choices{
+        position:relative;
+        float:right;
+        top:43px;
+        right:29.5%;
+    }
+    div.choicest{
+        position: relative;
+        left: 20%;
+        top: 105px;
+    }
+    div.moveThere{
+        position:relative;
+        left: -30%;
+        top: 224px;
+    }
 }
