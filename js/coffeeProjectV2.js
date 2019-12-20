@@ -75,15 +75,14 @@ let coffees = [
 ];
 
 //Displays the coffees to the browser
+/*
 function entire(){
 for (var i=0; i < coffees.length ;i++)
      document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
-     if(give() === 'light'){
-         document.getElementsByClassName('.example').style.display='none';
-     }
+     console.log(give());
      //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
 }
-
+*/
 //----------------------------------------------------------------------------------------------
 
     // Dynamic search function v1.0, This works with New Orleans, but not Light or Half because of the name City.
@@ -200,3 +199,10 @@ console.log(newOption());
         console.log(x);
     
 //---------------------------------------------------------------------------------------------- 
+
+function entire(){
+    for (var i=0; i < coffees.length ;i++)
+         document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
+         console.log(give());
+         //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
+    }
