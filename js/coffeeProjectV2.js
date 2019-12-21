@@ -164,8 +164,7 @@ console.log(newOption());
 
     function give() { 
         var x = document.getElementById("choices").value; 
-        document.getElementById("choiceHere").innerHTML =  
-        "Selected roast type: " + x; 
+        document.getElementById("choiceHere").innerHTML =  x;
         if(x === "light"){
             for(let a = 0; a < coffees.length; a++){
 
