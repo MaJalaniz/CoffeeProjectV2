@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/coffeeProjectV2.css">
     </head>
-    <body>
+    <body onload="entire()">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#">ARC Blend</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
                 <div class="col-xl-12"><h1>Coffee Shop Menu</h1>
                     <hr>
                 </div>
-                <div class="col-xl-7">Coffees go here!<br>This is where the extra content goes!</div>
+                <div id="myDiv" class="col-xl-7"></div>
                 <div class="col-xl-5">Responsive Search and Select here!<br>The drop down select and search bar go here!</div>
              </div>
         </div>     
@@ -56,9 +56,90 @@
                 position:relative;
                 right:45%;
             }
-
-
+            div.example{
+                width:235px;
+            }
           </style>
+          <script>
+                let coffees = [
+                {
+                    id: 1, 
+                    name: 'Light City', 
+                    roast: 'light'
+                },
+                {
+                    id: 2, 
+                    name: 'Half City', 
+                    roast: 'light'
+                },
+                {
+                    id: 3,
+                    name: 'Cinnamon',
+                    roast: 'light'
+                    },
+                {
+                    id: 4,
+                    name: 'City',
+                    roast: 'medium'
+                },
+                {
+                    id: 5,
+                    name: 'American',
+                    roast: 'medium'
+                },
+                {
+                    id: 6,
+                    name: 'Breakfast', 
+                    roast: 'medium'
+                },
+                {
+                    id: 7,
+                     name: 'High',
+                      roast: 'dark'
+                },
+                {
+                    id: 8,
+                     name: 'Continental',
+                      roast: 'dark'
+                },
+                {
+                    id: 9,
+                    name: 'New Orleans',
+                    roast: 'dark'
+                },
+                {
+                    id: 10,
+                    name: 'European',
+                    roast: 'dark'
+                },
+                {
+                    id: 11,
+                     name: 'Espresso',
+                      roast: 'dark'
+                },
+                {
+                    id: 12,
+                     name: 'Viennese',
+                      roast: 'dark'
+                },
+                {
+                    id: 13,
+                    name: 'Italian',
+                    roast: 'dark'
+                },
+                {
+                    id: 14,
+                     name: 'French',
+                      roast: 'dark'
+                },
+            ];
+                function entire(){
+                    for (var i=0; i < coffees.length ;i++)
+                         document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
+                         console.log(give());
+                         //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
+                    }
+          </script>
 
 
 
