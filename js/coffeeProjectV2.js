@@ -49,7 +49,7 @@ function search_drink() {
             x[i].style.display="none"; 
         } 
         else { 
-            x[i].style.display="list-item";                  
+            x[i].style.display ="initial";                  
         } 
     } 
 } 
@@ -92,12 +92,12 @@ console.log(newOption());
 /*
     function give() { 
         var x = document.getElementById("choices").value; 
-        document.getElementById("choiceHere").innerHTML =  x;
+        //document.getElementById("choiceHere").innerHTML =  x;
         if(x === "light"){
             for(let a = 0; a < coffees.length; a++){
 
                 if(coffees[a].roast.includes('light') == true){
-                document.getElementById("myDiv").innerHTML +=  "<div class= ONE>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                document.getElementById("myDiv").innerHTML +=  "<div class= ONE>" + "<ul>"  + "<li>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</li>" + "</i>" + "</ul>" + "</div>" + "<br>";
                 }else{
                     console.log("NOOOOOOOOOOOOO");
                 }
