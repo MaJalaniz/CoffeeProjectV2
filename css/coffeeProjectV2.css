@@ -9,7 +9,7 @@ h1{
 }
 
 div.move{
-    
+    width:300px;
 
 
 
@@ -53,7 +53,7 @@ button.searchButton.btn.btn-primary{
     background-color:#08c5d1;
 }
 div.choices{
-   
+   width:300px;
 
 
 
@@ -67,12 +67,12 @@ div.example:hover{
 }
 
 div.moveThere{
-    
+    width:300px;
 
-    
+
 }
 div.choicest{
-   
+   width:300px;
 
 
 }
@@ -87,9 +87,9 @@ hr.moveMe{
     width: 325px;
 }
 h3{
-    text-align:center;
-    position: relative;
-    left: 23px;
+    
+
+
 }
 
 nav.navbar.navbar-expand-lg{
@@ -183,7 +183,7 @@ div.row{
         color:grey;
     }
     div.example{
-       /*float: right;*/
+       
         width:199px;
     }
 }
