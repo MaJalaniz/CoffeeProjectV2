@@ -24,10 +24,16 @@ i {
 p {
     width:250px;
 }
+/*Taking out 250 rearranges the coffees list*/
 div {
     width: 250px;
     float: left;
 }
+div{
+    width:1279px;
+}
+/*Taking out 250 rearranges the coffees list*/
+
 div#myDiv.container {
     max-width: 570px;
     position: relative;
@@ -99,6 +105,34 @@ a.nav-link{
     ;
 
 }
+
+/*Imported changes from Grid.html*/
+
+#myFoot{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:2.5rem;
+    
+}
+small.text-center{
+    position:relative;
+    left:45%;
+}
+div.example{
+    width:235px;
+}
+div.row{
+    position:relative;
+
+}
+
+
+
+
+
+
+/*Imported changes from Grid.html*/
 
 
 
