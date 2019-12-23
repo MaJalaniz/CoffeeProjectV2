@@ -38,7 +38,51 @@
                     <hr>
                 </div>
                 <div id="myDiv" class="col-xl-7"></div>
-                <div class="col-xl-5">Responsive Search and Select here!<br>The drop down select and search bar go here!</div>
+                <div class="col-xl-5">
+                    <!--SELECTION CHOICES HERE-->
+                    <div class="choices">
+                            <h6>Roast</h6>
+                                <select id="choices" onchange="give()"><!--give() displays coffee/roast based on choice-->
+                                        <option class="nope"value="0">Choose a roast</option>
+                                        <option class="all" value="all">All</option>
+                                        <option class="lig" value="light" >light</option>
+                                        <option class="med" value="medium">medium</option>
+                                        <option class="dark" value="dark">dark</option>
+                                      </select>
+                        </div>
+                        <!--
+                        <p id="choiceHere">
+                        </p>-->
+                
+                        <div class="move">
+                            <!-- here below, <input> makes use of the onkeyup to run the function search_drink() -->
+                            <h6>Coffee Name</h6>
+                            <input type="text" id = "searchBar" onkeyup = "search_drink()" placeholder="Coffee name here">
+                                <br>
+                                <button type="submit" class="searchButton btn btn-primary">Submit</button>
+                        </div>
+                    
+                        <div class="choicest">
+                            <h3>Add a Coffee</h3>
+                            <h6>Roast</h6>
+                                <select id="choiceThere" onchange="give()"><!--give() displays coffee/roast based on choice-->
+                                        <option class="nope"value="0">Choose a roast</option>
+                                        <option class="all" value="all">All</option>
+                                        <option class="lig" value="light" >light</option>
+                                        <option class="med" value="medium">medium</option>
+                                        <option class="dark" value="dark">dark</option>
+                                      </select>
+                        </div>
+                        
+                        <div class="moveThere">
+                            <!-- here below, <input> makes use of the onkeyup to run the function search_drink() -->
+                            <h6>Coffee Name</h6>
+                            <input type="text" id = "searchBart" onkeyup = "search_drink()" placeholder="Your coffee name here">
+                                <br>
+                                <button type="submit" class="searchButton btn btn-primary">Submit</button>
+                        </div>
+                    <!--SELECTION CHOICES HERE-->
+                </div>
              </div>
         </div>     
 
@@ -51,7 +95,7 @@
 
 
 
-    
+
     <script src="js/coffeeProjectV2.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
