@@ -32,45 +32,13 @@ function entire(){
         //Write an If statement to toggle between light and dark mode
         //console.log(three);
         }
-
-
-
-//Displays the coffees to the browser
-/*
-function entire(){
-for (var i=0; i < coffees.length ;i++)
-     document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" + "<br>";
-     console.log(give());
-     //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
-}
-*/
 //----------------------------------------------------------------------------------------------
 
-    // Dynamic search function v1.0, This works with New Orleans, but not Light or Half because of the name City.
-/*
-function searching(){
-    let bar = document.getElementById('searchBar').value;
-    //let grab = document.querySelector('.box');
-    //grab.textContent = bar; //prints search to browser
     
-    for(let i = 0; i < coffees.length; i++){
-    if(bar.includes(coffees[i].name)){
-        console.log("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
-        //alert("This is " + coffees[i].name + " blend, a " + coffees[i].roast + " roast coffee!");
-        let one = coffees[i].name + " " + coffees[i].roast; 
-        let blend = document.querySelector('.square');
-        blend.textContent = one;
-    }else{
-        console.log("What is this coffee?");
-    }
-    
-    }
-}
-*/
 //----------------------------------------------------------------------------------------------
 
     //Dynamic search function 2.0, now works with all the coffees now not just light or half.
-    /*
+    
 function search_drink() { 
     let input = document.getElementById('searchBar').value 
     input=input.toLowerCase(); 
@@ -85,7 +53,7 @@ function search_drink() {
         } 
     } 
 } 
-*/
+
 //----------------------------------------------------------------------------------------------
     //write a function that adds an item to the list of coffee objects
 /*
