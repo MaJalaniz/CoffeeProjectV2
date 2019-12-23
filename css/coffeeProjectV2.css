@@ -186,5 +186,9 @@ div.row{
        
         width:199px;
     }
+    div#myDiv.col-xl-7{
+       width:500px;
+       top:150px;
+    }
 }
 /* Decide whether or not to change how the layout looks on mobile to improve ease of use */

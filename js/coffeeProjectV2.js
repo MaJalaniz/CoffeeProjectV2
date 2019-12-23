@@ -37,7 +37,7 @@ function entire(){
     
 //----------------------------------------------------------------------------------------------
 
-    //Dynamic search function 2.0, now works with all the coffees now not just light or half.
+    //Dynamic search function 2.0 now functions without turning the list into a  OL or UL.
     
 function search_drink() { 
     let input = document.getElementById('searchBar').value 
