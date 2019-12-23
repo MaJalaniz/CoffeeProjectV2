@@ -41,96 +41,7 @@
              </div>
         </div>     
 
-          <script>
-                let coffees = [
-                {
-                    id: 1, 
-                    name: 'Light City', 
-                    roast: 'light'
-                },
-                {
-                    id: 2, 
-                    name: 'Half City', 
-                    roast: 'light'
-                },
-                {
-                    id: 3,
-                    name: 'Cinnamon',
-                    roast: 'light'
-                    },
-                {
-                    id: 4,
-                    name: 'City',
-                    roast: 'medium'
-                },
-                {
-                    id: 5,
-                    name: 'American',
-                    roast: 'medium'
-                },
-                {
-                    id: 6,
-                    name: 'Breakfast', 
-                    roast: 'medium'
-                },
-                {
-                    id: 7,
-                     name: 'High',
-                      roast: 'dark'
-                },
-                {
-                    id: 8,
-                     name: 'Continental',
-                      roast: 'dark'
-                },
-                {
-                    id: 9,
-                    name: 'New Orleans',
-                    roast: 'dark'
-                },
-                {
-                    id: 10,
-                    name: 'European',
-                    roast: 'dark'
-                },
-                {
-                    id: 11,
-                     name: 'Espresso',
-                      roast: 'dark'
-                },
-                {
-                    id: 12,
-                     name: 'Viennese',
-                      roast: 'dark'
-                },
-                {
-                    id: 13,
-                    name: 'Italian',
-                    roast: 'dark'
-                },
-                {
-                    id: 14,
-                     name: 'French',
-                      roast: 'dark'
-                },
-            ];
-                function entire(){
-                    for (var i=0; i < coffees.length ;i++)
-                         document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
-                         //console.log(give());
-                         //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
-                    }
-
-                    function darker(){
-                        let one = document.getElementById('thisOne').style.backgroundColor = "black";
-                        let two = document.getElementById('thisTwo').style.color = "white";
-                        let three = document.getElementById('darkMode').innerHTML = "Light Mode";
-                        //Write an If statement to toggle between light and dark mode
-                        console.log(three);
-                        }
-                        
-          </script>
-
+          
 
 
 
@@ -141,6 +52,7 @@
                   <small class="text-center">Copyright &copy; ARC Blend</small>
          </footer>
     </body>
+    <script src="js/coffeeProjectV2.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
