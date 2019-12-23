@@ -9,10 +9,10 @@ h1{
 }
 
 div.move{
-    float:right;
-    position: relative;
-    left: 0%;
-    top:100px;
+    
+
+
+
 }
 strong {
     font-size: 2rem;
@@ -56,7 +56,7 @@ div.choices{
    
 
 
-    
+
 }
 select{
     width: 300px;
@@ -67,14 +67,14 @@ div.example:hover{
 }
 
 div.moveThere{
-    position:relative;
-    left: 41.5%;
-    top: 344px;
+    
+
+    
 }
 div.choicest{
-    position: relative;
-    left: 61%;
-    top: 250px;
+   
+
+
 }
 input#searchBart{
     border-radius: 5px 5px 5px 5px;
