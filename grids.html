@@ -59,6 +59,7 @@
             div.example{
                 width:235px;
             }
+
           </style>
           <script>
                 let coffees = [
@@ -141,8 +142,10 @@
                     }
 
                     function darker(){
-                        document.getElementById('thisOne').style.backgroundColor = "black";
-                        document.getElementById('thisTwo').style.color = "white";
+                        let one = document.getElementById('thisOne').style.backgroundColor = "black";
+                        let two = document.getElementById('thisTwo').style.color = "white";
+                        let three = document.getElementById('darkMode').innerHTML = "Light Mode";
+                        
                     }
           </script>
 
