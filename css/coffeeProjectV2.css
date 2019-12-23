@@ -141,26 +141,26 @@ div.row{
 /*500px by 435px */
 @media screen and (max-width: 500px){
     div.move {
-        float: right;
         position: relative;
-        left: 20%;
-        top: 64px;
+        right: 24%;
+        bottom: 189px;
+       
     }
     div.choices{
         position:relative;
-        float:right;
-        top:43px;
-        right:29.5%;
+        bottom:250px;
+        
     }
     div.choicest{
         position: relative;
-        left: 20%;
-        top: 140px;
+        right: 30%;
+        bottom: 253px;
+        
     }
     div.moveThere{
         position:relative;
-        left: -30%;
-        top: 245px;
+        right: 57%;
+        bottom: 188px;
     }
     div#myDiv.container {
         max-width: 450px;
@@ -189,6 +189,24 @@ div.row{
     div#myDiv.col-xl-7{
        width:500px;
        top:150px;
+    }
+    select{
+        width: 150px;
+    }
+    input#searchBar{
+        border-radius: 5px 5px 5px 5px;
+        width:150px;
+    }
+    button.searchButton.btn.btn-primary{
+        width:150px;
+        background-color:#08c5d1;
+    }
+    hr.moveMe{
+       display: none;
+    }
+    input#searchBart{
+        border-radius: 5px 5px 5px 5px;
+        width:150px;
     }
 }
 /* Decide whether or not to change how the layout looks on mobile to improve ease of use */
