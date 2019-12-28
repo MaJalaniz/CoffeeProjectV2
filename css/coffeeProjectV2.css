@@ -105,7 +105,11 @@ a.nav-link{
     ;
 
 }
-
+img {
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+}
 /*Imported changes from Grid.html*/
 
 #myFoot{
