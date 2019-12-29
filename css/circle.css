@@ -1,11 +1,3 @@
-/*
-p#circle {
-    border-style:solid;
-    border-color:black;
-    max-width: 60px;
-    border-radius: 36px;
-    height: 50px;
-}*/
 
 p#circle {
     position: relative;
