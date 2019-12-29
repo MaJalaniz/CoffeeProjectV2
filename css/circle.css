@@ -10,7 +10,7 @@ p#circle {
 p#circle {
     position: relative;
     display:block;
-    height: 10px;
+    height: 5px;
     width: 24px;
     margin: 10px 7px;
     padding: 5px 5px;
@@ -52,3 +52,14 @@ p#circle {
   .fill:hover:before {
     top: 0;
   }
+
+  p#saucer{
+    border-radius: 0 0 90px 90px;
+    height: 4px;
+    width: 36px;
+    border: 2px solid;
+    position: relative;
+    bottom: 18px;
+    left: 7px;
+  }
+  
