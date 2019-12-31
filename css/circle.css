@@ -64,8 +64,8 @@ p#circle {
     right: 2px;
   }
   nav.navbar.navbar-expand-lg.navbar-light.bg-light{
-      position:relative;
-      height:60px;
+      /*position:relative;
+      height:60px; THESE TWO CAUSE A BUG IN THE DROP DOWN LIST*/
   }
   a.logoName{
       position:relative;
