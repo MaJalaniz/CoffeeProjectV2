@@ -86,8 +86,8 @@ hr.moveMe{
     left: 23%;
     width: 325px;
 }
-h3{
-    
+h2{
+    text-align:center;
 
 
 }
@@ -233,6 +233,12 @@ div.row{
     div.col-xl-5{
         position:relative;
     }
+}
+button.searchButton.btn.btn-primary.nurple{
+    position: relative;
+    left: 39%;
+    top: 30px;
+    background-color:#08c5d1;
 }
 /* Format A is completed*/
 /* NEXT OBJECTIVE: REPLACE ADD A COFFEE WITH A BUTTON/QUILL TO POPULATE THE OPTION TO ADD A COFFEE /*
