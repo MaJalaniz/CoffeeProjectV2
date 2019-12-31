@@ -2,6 +2,7 @@
 p#circle {
     position: relative;
     display:block;
+    bottom:23px;
     height: 17px;
     width: 22px;
     margin: 10px 7px;
@@ -51,7 +52,7 @@ p#circle {
     width: 28px;
     border: 2.4px solid;
     position: relative;
-    bottom: 12px;
+    bottom: 35px;
     left: 4px;
 }
   p#handle{
@@ -60,7 +61,7 @@ p#circle {
     width: 9px;
     height: 11px;
     border-radius: 7px;
-    top: 27px;
+    top: 4px;
     right: 2px;
   }
   nav.navbar.navbar-expand-lg.navbar-light.bg-light{
@@ -74,5 +75,9 @@ p#circle {
   a.navbar-brand{
       position:relative;
       margin-right:4px;
+      height: 32px;
   }
 /* Coffee cup filling up animation logo */
+
+/* Adjust the Coffee cup filling up animation logo to take less space on the Nav bar */
+

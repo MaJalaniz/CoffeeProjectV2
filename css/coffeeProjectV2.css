@@ -142,7 +142,9 @@ h1.adjust{
     text-align:center;
 }
 
-
+img.plus{
+    position:relative;
+}
 
 
 /*Imported changes from Grid.html*/
