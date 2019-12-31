@@ -38,7 +38,7 @@ p#circle {
     right: 0;
     top: 100%;
     z-index: -1;
-    -webkit-transition: top 1.25s ease-in;
+    -webkit-transition: top 1s ease-in;
   }
   
   .fill:hover:before {
