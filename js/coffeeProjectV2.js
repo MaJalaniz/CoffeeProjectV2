@@ -17,13 +17,53 @@ let coffees =
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
-
+/*
 function entire(){
     for (var i=0; i < coffees.length ;i++)
          document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
          //console.log(give());
          //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
     }
+    */
+    function entire(){
+        for (var i=0; i < coffees.length ;i++){
+        let y = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
+        }
+        //console.log(give());
+        //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
+           var x = document.getElementById("choices").value; 
+           //document.getElementById("choiceHere").innerHTML =  x;
+           if(x === "light"){
+               for(let a = 0; a < coffees.length; a++){
+                   if(coffees[a].roast.includes('light') == true){
+                   let y = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
+                   }else{
+                       console.log("NOOOOOOOOOOOOO");
+                   }
+               }
+               }else if (x === "medium"){
+                   for(let a = 0; a < coffees.length; a++){
+                       if(coffees[a].roast.includes('medium') == true){
+                       document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
+                       }
+                   }
+               }else if(x === "dark"){
+                   for(let a = 0; a < coffees.length; a++){
+                       if(coffees[a].roast.includes('dark') == true){
+                       document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
+                       }
+                   }
+               }else if (x === "all"){
+                   for(let a = 0; a < coffees.length; a++){
+                       document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" + "<br>";
+                       }
+                   }else{
+                       console.log("NO");
+                       
+                   }
+                   
+               }
+
 
     function darker(){
         let one = document.getElementById('thisOne').style.backgroundColor = "black";
@@ -126,3 +166,14 @@ console.log(newOption());
         console.log(x);
     */
 //---------------------------------------------------------------------------------------------- 
+
+
+function plusOne(){
+
+  name = document.getElementById('searchBart').value;  
+  roast = document.getElementById('choiceThere').value;
+
+
+  console.log(name + ", " + roast);
+}
+console.log(plusOne());
