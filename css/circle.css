@@ -2,8 +2,8 @@
 p#circle {
     position: relative;
     display:block;
-    height: 5px;
-    width: 16px;
+    height: 17px;
+    width: 22px;
     margin: 10px 7px;
     padding: 5px 5px;
     font-weight: 700;
@@ -38,7 +38,7 @@ p#circle {
     right: 0;
     top: 100%;
     z-index: -1;
-    -webkit-transition: top 2s ease-in;
+    -webkit-transition: top 1.25s ease-in;
   }
   
   .fill:hover:before {
@@ -47,20 +47,32 @@ p#circle {
 
   p#saucer{
     border-radius: 0 0 90px 90px;
-    height: 5px;
-    width: 22px;
-    border: 1.5px solid;
+    height: 6px;
+    width: 28px;
+    border: 2.4px solid;
     position: relative;
-    bottom: 11px;
+    bottom: 12px;
     left: 4px;
-  }
+}
   p#handle{
+    position: relative;
+    border: 2px solid;
+    width: 9px;
+    height: 11px;
+    border-radius: 7px;
+    top: 27px;
+    right: 2px;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light{
       position:relative;
-      border: 2px solid;
-      width: 8px;
-      height: 10px;
-      border-radius: 7px;
-      top: 26px;
-      right: 1px;
+      height:60px;
+  }
+  a.logoName{
+      position:relative;
+      width:90px;
+  }
+  a.navbar-brand{
+      position:relative;
+      margin-right:4px;
   }
 /* Coffee cup filling up animation logo */
