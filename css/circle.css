@@ -47,12 +47,12 @@ p#circle {
 
   p#saucer{
     border-radius: 0 0 90px 90px;
-    height: 4px;
-    width: 31px;
-    border: 2px solid;
+    height: 5px;
+    width: 22px;
+    border: 1.5px solid;
     position: relative;
-    bottom: 18px;
-    left: 5px;
+    bottom: 11px;
+    left: 4px;
   }
   p#handle{
       position:relative;
@@ -60,7 +60,7 @@ p#circle {
       width: 8px;
       height: 10px;
       border-radius: 7px;
-      top: 31px;
-      right: 3px;
+      top: 26px;
+      right: 1px;
   }
 /* Coffee cup filling up animation logo */
