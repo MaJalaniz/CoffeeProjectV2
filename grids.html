@@ -71,7 +71,7 @@
                             <hr class="moveMe">
                             <h4>Add a Coffee</h4>
                             <h6>Roast</h6>
-                                <select id="choiceThere" onchange="plusOne()"><!--give() displays coffee/roast based on choice-->
+                                <select id="choiceThere" onchange="getRoast()"><!--give() displays coffee/roast based on choice-->
                                         <option class="nope"value="0">Choose a roast</option>
                                         <option class="all" value="all">All</option>
                                         <option class="lig" value="light" >light</option>
@@ -83,9 +83,9 @@
                         <div class="moveThere">
                             <!-- here below, <input> makes use of the onkeyup to run the function search_drink() -->
                             <h6>Coffee Name</h6>
-                            <input type="text" id = "searchBart" onkeyup = "plusOne()" placeholder="Your coffee name here">
+                            <input type="text" id = "searchBart" onkeyup = "getName()" placeholder="Your coffee name here">
                                 <br>
-                                <button type="submit" class="searchButton btn btn-primary">Submit</button>
+                                <button type="submit" class="searchButton btn btn-primary" onclick="addCoffee()">Submit</button>
                         </div>
                         
                     <!--SELECTION CHOICES HERE-->

@@ -167,7 +167,7 @@ console.log(newOption());
     */
 //---------------------------------------------------------------------------------------------- 
 
-
+/*
 function plusOne(){
 
   name = document.getElementById('searchBart').value;  
@@ -183,3 +183,35 @@ function plusOne(){
   console.log(here);
 }
 console.log(plusOne());
+*/
+//---------------------------------------------------------------------------------------------- 
+//let menu = {};
+function getName(name){
+    let menu = [];
+    name = document.getElementById('searchBart').value;
+    menu.push({name});
+    console.log(menu);
+   // console.log(menu);
+    //return name;
+}
+console.log(getName());
+
+
+function getRoast(roast){
+    roast = document.getElementById('choiceThere').value;
+    menu.push(roast);
+    console.log(menu);
+    //console.log(roast);
+    //return roast;
+}
+console.log(getRoast());
+
+/*
+function addCoffee(name, roast){
+   
+    coffees.push(name);
+    coffees.push(roast);
+    console.log(coffees);
+}
+console.log(addCoffee());
+*/
