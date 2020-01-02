@@ -207,14 +207,14 @@ function getRoast(){
     return roast;
 }
 function getId(){
-    
+    //Write a function that adds a New ID to the existing list of coffees/ this ID cannot be equal to any on the Coffees list
 }
 
 function addCoffee(){
-    let skylander = getName();
-    let dark = getRoast();
-    //let coffees = [];
-    coffees.push({id: 20, name: skylander, roast: dark});
+    let coffeeName = getName();
+    let coffeeRoast = getRoast();
+    let coffeeId; //This will be equal to getId() from above
+    coffees.push({id: 20, name: coffeeName, roast: coffeeRoast});
     console.log(coffees);
     return coffees;
 }
