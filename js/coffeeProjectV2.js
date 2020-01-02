@@ -185,33 +185,36 @@ function plusOne(){
 console.log(plusOne());
 */
 //---------------------------------------------------------------------------------------------- 
-//let menu = {};
-function getName(name){
-    let menu = [];
-    name = document.getElementById('searchBart').value;
-    menu.push({name});
-    console.log(menu);
-   // console.log(menu);
-    //return name;
-}
-console.log(getName());
-
-
-function getRoast(roast){
-    roast = document.getElementById('choiceThere').value;
-    menu.push(roast);
-    console.log(menu);
-    //console.log(roast);
-    //return roast;
-}
-console.log(getRoast());
-
 /*
-function addCoffee(name, roast){
-   
-    coffees.push(name);
-    coffees.push(roast);
-    console.log(coffees);
-}
-console.log(addCoffee());
+name = document.getElementById('searchBart').value;
+roast = document.getElementById('choiceThere').value;
 */
+/*
+var nietos = [];
+nietos.push({"01": nieto.label, "02": nieto.value});
+return nietos;
+*/
+
+
+
+function getName(){
+    name = document.getElementById('searchBart').value;
+    return name;
+}
+
+function getRoast(){
+    roast = document.getElementById('choiceThere').value;
+    return roast;
+}
+function getId(){
+    
+}
+
+function addCoffee(){
+    let skylander = getName();
+    let dark = getRoast();
+    //let coffees = [];
+    coffees.push({id: 20, name: skylander, roast: dark});
+    console.log(coffees);
+    return coffees;
+}
