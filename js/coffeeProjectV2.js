@@ -208,13 +208,29 @@ function getRoast(){
 }
 function getId(){
     //Write a function that adds a New ID to the existing list of coffees/ this ID cannot be equal to any on the Coffees list
+    for(let d = 0; d < coffees.length; d++){
+        if(d < coffees.length){
+            if(coffees[d].id === coffees.length){
+                console.log("This is the Max amount of coffees in the list: " + coffees[d].id);
+                let coffeeMax = coffees[d].id;
+                console.log(coffeeMax);
+                //let a variable hold coffees[d].id and define a new Max here
+            }else{
+                console.log("Other values");
+            }
+        console.log();
+        
+        }
 }
+}
+console.log(getId());
 
 function addCoffee(){
     let coffeeName = getName();
     let coffeeRoast = getRoast();
     let coffeeId; //This will be equal to getId() from above
-    coffees.push({id: 20, name: coffeeName, roast: coffeeRoast});
+    coffees.push({id: coffeeId, name: coffeeName, roast: coffeeRoast});
+    
     console.log(coffees);
     return coffees;
 }
