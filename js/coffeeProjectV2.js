@@ -229,8 +229,8 @@ function addCoffee(){
     let coffeeName = getName();
     let coffeeRoast = getRoast();
     let coffeeId; //This will be equal to getId() from above
-    coffees.push({id: coffeeId, name: coffeeName, roast: coffeeRoast});
-    
+    coffees.push({id: 15, name: coffeeName, roast: coffeeRoast});
+    //entire();
     console.log(coffees);
     return coffees;
 }
