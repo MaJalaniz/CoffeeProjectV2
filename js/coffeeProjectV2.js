@@ -227,18 +227,25 @@ console.log(getId());
 
 
 function createDiv() { 
+
+    //Creates a Div element with class example
     var x = document.createElement("div"); 
     x.className += "example";
+
+    //Creates a Strong tag and appends a text node
     var z = document.createElement("strong");
     x.appendChild(z);
+    var a = document.createTextNode("Stronger ");
+    z.appendChild(a);
+
+    //Creates a Italics tag and appends a text node
     var w = document.createElement("i");
     x.appendChild(w);
-    //the above code creates a div with strong and italics tags within
+    var b = document.createTextNode("Italics");
+    w.appendChild(b);
+    //the above code creates a div with strong and italics tags with text inside both tags
 
-    var t = document.createTextNode("What is this tag?"); 
-    x.appendChild(t); 
     document.getElementById('myDiv').appendChild(x);
-    
 } 
 /*
 function addCoffee(){
