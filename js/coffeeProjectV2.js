@@ -235,13 +235,13 @@ function createDiv() {
     //Creates a Strong tag and appends a text node
     var z = document.createElement("strong");
     x.appendChild(z);
-    var a = document.createTextNode("Stronger ");
+    var a = document.createTextNode(getName() + " ");
     z.appendChild(a);
 
     //Creates a Italics tag and appends a text node
     var w = document.createElement("i");
     x.appendChild(w);
-    var b = document.createTextNode("Italics");
+    var b = document.createTextNode(getRoast());
     w.appendChild(b);
     //the above code creates a div with strong and italics tags with text inside both tags
 
