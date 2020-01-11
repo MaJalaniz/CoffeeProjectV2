@@ -225,6 +225,22 @@ function getId(){
 }
 console.log(getId());
 
+
+function createDiv() { 
+    var x = document.createElement("div"); 
+    x.className += "example";
+    var z = document.createElement("strong");
+    x.appendChild(z);
+    var w = document.createElement("i");
+    x.appendChild(w);
+    //the above code creates a div with strong and italics tags within
+
+    var t = document.createTextNode("What is this tag?"); 
+    x.appendChild(t); 
+    document.getElementById('myDiv').appendChild(x);
+    
+} 
+/*
 function addCoffee(){
     let coffeeName = getName();
     let coffeeRoast = getRoast();
@@ -234,3 +250,4 @@ function addCoffee(){
     console.log(coffees);
     return coffees;
 }
+*/
