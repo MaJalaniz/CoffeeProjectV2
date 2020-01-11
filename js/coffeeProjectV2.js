@@ -227,6 +227,7 @@ console.log(getId());
 
 
 function createDiv() { 
+    //BuG:Choose a Roast option gives a 0 value for blend when only given a Name
 
     //Creates a Div element with class example
     var x = document.createElement("div"); 
