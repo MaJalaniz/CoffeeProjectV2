@@ -167,34 +167,10 @@ console.log(newOption());
     */
 //---------------------------------------------------------------------------------------------- 
 
-/*
-function plusOne(){
+//Todo: write an if conditional checking the Choose a Roast option to return an Error/Alert 
+//to choose a Roast Type
 
-  name = document.getElementById('searchBart').value;  
-  roast = document.getElementById('choiceThere').value;
-  let both = name + ", " + roast;
-  let here = [];
-  here.push(both);
-
-  //This function pulls values from search bar and select dropdown
-  //Then pushes them into a new array
-  //Does not wait to log the whole name and instead logs every individual letter
-  console.log(name + ", " + roast);
-  console.log(here);
-}
-console.log(plusOne());
-*/
 //---------------------------------------------------------------------------------------------- 
-/*
-name = document.getElementById('searchBart').value;
-roast = document.getElementById('choiceThere').value;
-*/
-/*
-var nietos = [];
-nietos.push({"01": nieto.label, "02": nieto.value});
-return nietos;
-*/
-
 
 
 function getName(){
