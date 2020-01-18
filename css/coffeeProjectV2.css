@@ -31,9 +31,11 @@ div {
     width: 250px;
     float: left;
 }
+/*
 div{
     width:1279px;
 }
+*/
 /*Taking out 250 rearranges the coffees list*/
 
 div#myDiv.container {
@@ -130,6 +132,7 @@ div.example{
 }
 div.row{
     position:relative;
+    width:1200px;
 
 }
 
@@ -265,8 +268,14 @@ img.plus{
     }
 }
 
-
+form{
+    position:relative;
+    border: solid;
+    width: 300px;
+    height: 250px;
+    left:36%;
+}
 
 
 /* Format A is completed*/
-/* NEXT OBJECTIVE: REPLACE ADD A COFFEE WITH A BUTTON/QUILL TO POPULATE THE OPTION TO ADD A COFFEE /*
+/* NEXT OBJECTIVE: REPLACE ADD A COFFEE WITH A BUTTON/QUILL TO POPULATE THE OPTION TO ADD A COFFEE */
