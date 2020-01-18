@@ -276,6 +276,10 @@ form{
     left:36%;
 }
 
-
+form.registerUser{
+    position:relative;
+    width: 329px;
+    height: 475px;
+}
 /* Format A is completed*/
 /* NEXT OBJECTIVE: REPLACE ADD A COFFEE WITH A BUTTON/QUILL TO POPULATE THE OPTION TO ADD A COFFEE */
