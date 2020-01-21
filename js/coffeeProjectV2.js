@@ -22,15 +22,6 @@ function entire(){
     for (var i=0; i < coffees.length ;i++){
          document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
 
-            if(coffees[i].roast === "light"){
-                console.log("this is light");
-                let lights = document.querySelector('.example');
-                console.log("YAY LIGHTS");
-                lights.setAttribute("class", "LIGHT");
-            }else{
-                console.log("NOT COFFEE");
-            }
-
         }
     }
     
@@ -46,6 +37,7 @@ function entire(){
                    let y = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
                    }else{
                        console.log("NOOOOOOOOOOOOO");
+                       document.querySelector('.example').style.display = "none";
                    }
                }
                }else if (x === "medium" && x !== "light" && x !== "dark"){
@@ -70,14 +62,6 @@ function entire(){
                    }
                    
                }
-
-function newClassName(){
-   let a = document.getElementsByClassName('example')
-   console.log(a);
-}
-console.log(newClassName());
-
-
 
 
 
