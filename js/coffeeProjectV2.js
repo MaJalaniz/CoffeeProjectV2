@@ -17,23 +17,30 @@ let coffees =
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
-/*
+
 function entire(){
-    for (var i=0; i < coffees.length ;i++)
+    for (var i=0; i < coffees.length ;i++){
          document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
-         //console.log(give());
-         //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
-    }
-    */
-    function entire(){
-        for (var i=0; i < coffees.length ;i++){
-        let y = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[i].name + "</strong>" + " " + "<i>" + coffees[i].roast + "</i>" + "</div>" ;
+
+            if(coffees[i].roast === "light"){
+                console.log("this is light");
+                let lights = document.querySelector('.example');
+                console.log("YAY LIGHTS");
+                lights.setAttribute("class", "LIGHT");
+            }else{
+                console.log("NOT COFFEE");
+            }
+
         }
-        //console.log(give());
-        //MANIPULATE THIS FUNCTION INSTEAD OF THE GIVE() TO DISPLAY COFFEES
+    }
+    
+
+    //Selection function
+    function coffeesSelect(){
+        
            var x = document.getElementById("choices").value; 
            //document.getElementById("choiceHere").innerHTML =  x;
-           if(x === "light"){
+           if(x === "light" && x !== "medium" && x !== "dark"){
                for(let a = 0; a < coffees.length; a++){
                    if(coffees[a].roast.includes('light') == true){
                    let y = document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
@@ -41,13 +48,13 @@ function entire(){
                        console.log("NOOOOOOOOOOOOO");
                    }
                }
-               }else if (x === "medium"){
+               }else if (x === "medium" && x !== "light" && x !== "dark"){
                    for(let a = 0; a < coffees.length; a++){
                        if(coffees[a].roast.includes('medium') == true){
                        document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
                        }
                    }
-               }else if(x === "dark"){
+               }else if(x === "dark" && x !== "light" && x !== "medium"){
                    for(let a = 0; a < coffees.length; a++){
                        if(coffees[a].roast.includes('dark') == true){
                        document.getElementById("myDiv").innerHTML +=  "<div class= example>" + "<strong>" + coffees[a].name + "</strong>" + " " + "<i>" + coffees[a].roast + "</i>" + "</div>" ;
@@ -63,6 +70,16 @@ function entire(){
                    }
                    
                }
+
+function newClassName(){
+   let a = document.getElementsByClassName('example')
+   console.log(a);
+}
+console.log(newClassName());
+
+
+
+
 
 
     function darker(){
@@ -224,14 +241,3 @@ function createDiv() {
 
     document.getElementById('myDiv').appendChild(x);
 } 
-/*
-function addCoffee(){
-    let coffeeName = getName();
-    let coffeeRoast = getRoast();
-    let coffeeId; //This will be equal to getId() from above
-    coffees.push({id: 15, name: coffeeName, roast: coffeeRoast});
-    //entire();
-    console.log(coffees);
-    return coffees;
-}
-*/
